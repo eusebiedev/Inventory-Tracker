@@ -11,6 +11,8 @@
 * Nodejs
 * Webpack
 * Node.js
+* JSX
+* Javascript
 
 #### Initial Mockup designed in draw.io [drawio.com](https://www.drawio.com/)
 
@@ -30,9 +32,15 @@ As a user, I want to see a list/menu of all available types of coffee beans. For
 
 ## Setup/Installation Requirements
 
+## Setup Instructions 
+1. Open your terminal (e.g. Terminal of Gitbash) and run these commands:
+2. Clone this repo to your desktop using $ `git clone https://github.com/eusebiedev/Inventory-Tracker.git ` 
+3. Navigate to this project's root directory `inventory-tracker` with $ `cd inventory-tracker`
+4. Run $ `npm install` in the project's root directory to install any necessary dependencies.
+5. Run $ `npm start` in the project's root directory to start the server. Once the server loads, the webpage should load automatically but if not type in the localhost route that your terminal shows like `https://localhost:5001/`.
+6. User should have full CRUD functionality to interact with the application
 
-
-## Known Bugs as of 06/30.23
+## Known Bugs as of 06/30/23
 
 * _No known bugs_
 
