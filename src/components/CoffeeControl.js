@@ -19,7 +19,7 @@ class CoffeeControl extends React.Component {
           origin: "Italy",
           roast: "Dark",
           price: 5,
-          available: 130,
+          available: 5,
           id: v4()
         },
         {
@@ -27,7 +27,7 @@ class CoffeeControl extends React.Component {
           origin: "California",
           roast: "Light",
           price: 10,
-          available: 130,
+          available: 10,
           id: v4()
         },
         {
@@ -35,7 +35,7 @@ class CoffeeControl extends React.Component {
           origin: "Spain",
           roast: "Medium",
           price: 15,
-          available: 130,
+          available: 15,
           id: v4()
         },
         {
@@ -124,7 +124,7 @@ class CoffeeControl extends React.Component {
       mainCoffeeList: newMainCoffeeList
     });
   }
-  
+
   render(){
     let currentlyVisibleState = null;
     let buttonText = null; 

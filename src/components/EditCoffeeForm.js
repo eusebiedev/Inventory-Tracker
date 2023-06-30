@@ -12,8 +12,8 @@ function EditCoffeeForm (props) {
       name: event.target.name.value, 
       origin: event.target.origin.value,
       roast: event.target.roast.value, 
-      price: event.target.price.value, 
-      available: event.target.available.value,
+      price: parseInt(event.target.price.value), 
+      available: parseInt(event.target.available.value),
       id: coffee.id
     });
   }

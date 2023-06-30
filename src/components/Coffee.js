@@ -8,8 +8,8 @@ function Coffee(props){
         <h3>{props.name}</h3>
         <p><em>Coffee Origin: {props.origin}</em></p>
         <p>Roast Style: {props.roast}</p>
-        <p>Cost per lb: {props.price}</p>
-        <p>Available lbs: {props.available}</p>
+        <p>Cost per lb: ${props.price}</p>
+        <p>Available: {props.available} lbs</p>
         <hr/>
       </div>
     </React.Fragment>
@@ -17,11 +17,11 @@ function Coffee(props){
 }
 
 Coffee.propTypes = {
-  name: PropTypes.string,
-  origin: PropTypes.string,
-  roast: PropTypes.string,
-  price: PropTypes.number,
-  available: PropTypes.number,
+  name: PropTypes.string.isRequired,
+  origin: PropTypes.string.isRequired,
+  roast: PropTypes.string.isRequired,
+  price: PropTypes.number.isRequired,
+  available: PropTypes.number.isRequired,
   id: PropTypes.string,
   whenCoffeeClicked: PropTypes.func
 
