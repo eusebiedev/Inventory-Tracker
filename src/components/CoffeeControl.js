@@ -110,20 +110,21 @@ class CoffeeControl extends React.Component {
     });
   }
 
-  handleSellingCoffee = (_selectedCoffee) => {
-    let selectCoffee = this.state.selectedCoffee;
-    if (selectCoffee.available > 0){
-      selectCoffee.available -= 1;
+  handleSellingCoffee = () => {
+    const { selectedCoffee, mainCoffeeList } = this.state;
+    if (selectedCoffee.available > 0) {
+      selectedCoffee.available -= 1;
     } else {
-      selectCoffee.available = 0;
+      selectedCoffee.available = 0;
     }
-    const newMainCoffeeList = this.state.mainCoffeeList;
-    newMainCoffeeList[this.state.mainCoffeeList.indexOf(selectCoffee)] = selectCoffee;
+    const index = mainCoffeeList.indexOf(selectedCoffee);
+    const newMainCoffeeList = [...mainCoffeeList];
+    newMainCoffeeList[index] = selectedCoffee;
     this.setState({
-    mainCoffeeList: newMainCoffeeList
+      mainCoffeeList: newMainCoffeeList
     });
   }
-
+  
   render(){
     let currentlyVisibleState = null;
     let buttonText = null; 
