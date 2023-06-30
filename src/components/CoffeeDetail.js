@@ -12,7 +12,6 @@ function CoffeeDetail(props){
       <p>Roast Style: {coffee.roast}</p>
       <p>Cost per lb: {coffee.price}</p>
       <p>Available lbs: {coffee.avialable}</p>
-      <p>lbs Sold: {coffee.sold}</p>
       <button onClick={ props.onClickingEdit }>Edit Coffee</button> 
       <button onClick={ props.onCoffeeSale }>Sell a lb of Coffee</button> 
     </React.Fragment>
