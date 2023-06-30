@@ -2,7 +2,7 @@
 
 #### By _**Eusebie Siebenberg**_
 
-#### 
+#### Coffee Shop inventory tracker application built with React
 
 
 ## Technologies Used
@@ -18,12 +18,21 @@
 
 ## Description
 
-
+At our coffee shop, we sell coffee beans in 1-pound servings, and we get our coffee delivered in large burlap sacks. Here are the details:
+* we sell multiple types of coffee beans, each in different burlap sacks
+* one burlap sack contains 130 pounds of coffee beans
+* every sale decrements one pound of coffee beans from the burlap sack, until it is empty
+As a user, I want to see a list/menu of all available types of coffee beans. For each item, I want to see its name, origin, price, and roast of the coffee bean. As a user, I want to:
+* submit a form to add a new burlap sack of coffee to the inventory
+* click on a burlap sack to see its detail page
+* see how many pounds of coffee beans are left in a burlap sack. A burlap sack has roughly 130 pounds
+* click a button to sell a pound of coffee beans. This should decrease the number of pounds left by 1. The number of pounds in a sack of coffee beans should not be able to go below 0
 
 ## Setup/Installation Requirements
 
 
-## Known Bugs
+
+## Known Bugs as of 06/30.23
 
 * _No known bugs_
 
