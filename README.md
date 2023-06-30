@@ -10,10 +10,11 @@
 * React
 * Nodejs
 * Webpack
+* Node.js
 
 #### Initial Mockup designed in draw.io [drawio.com](https://www.drawio.com/)
 
-![InventoryTrackerMockup](src/img/)
+![InventoryTrackerMockup](src/img/inventorytracker.png)
 
 ## Description
 
