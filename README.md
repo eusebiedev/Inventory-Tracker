@@ -30,7 +30,7 @@
 
 ## [MIT](https://opensource.org/license/mit/) License 
 
-Copyright (c) 2023 Joseph Wilfong, Sam Adams & Eusebie Siebenberg
+Copyright (c) 2023 Eusebie Siebenberg
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
