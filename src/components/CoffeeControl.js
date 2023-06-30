@@ -4,6 +4,7 @@ import CoffeeList from './CoffeeList';
 import EditCoffeeForm from './EditCoffeeForm';
 import NewCoffeeForm from './NewCoffeeForm';
 import { v4 } from 'uuid';
+import coffee1 from './../img/coffee1.jpg';
 
 class CoffeeControl extends React.Component {
 
@@ -20,6 +21,7 @@ class CoffeeControl extends React.Component {
           roast: "Dark",
           price: 5,
           available: 5,
+          image: coffee1,
           id: v4()
         },
         {
@@ -28,6 +30,7 @@ class CoffeeControl extends React.Component {
           roast: "Light",
           price: 10,
           available: 10,
+          image: coffee1,
           id: v4()
         },
         {
@@ -36,6 +39,7 @@ class CoffeeControl extends React.Component {
           roast: "Medium",
           price: 15,
           available: 15,
+          image: coffee1,
           id: v4()
         },
         {
@@ -44,6 +48,7 @@ class CoffeeControl extends React.Component {
           roast: "Dark",
           price: 20,
           available: 130,
+          image: coffee1,
           id: v4()
         },
         {
@@ -52,6 +57,7 @@ class CoffeeControl extends React.Component {
           roast: "Techno",
           price: 25,
           available: 130,
+          image: coffee1,
           id: v4()
         },
       ]
