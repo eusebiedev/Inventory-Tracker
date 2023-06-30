@@ -55,6 +55,7 @@ class CoffeeControl extends React.Component {
           id: v4()
         },
       ]
+
     };
   }
 
@@ -80,8 +81,8 @@ class CoffeeControl extends React.Component {
   }
 
   handleChangingSelectedCoffee = (id) => {
-    const selectedCoffee = this.state.mainCoffeeList.filter(coffee => coffee.id === id)
-    [0];
+    const selectedCoffee = 
+    this.state.mainCoffeeList.filter(coffee => coffee.id === id)[0];
     this.setState({selectedCoffee: selectedCoffee
     });
   }
@@ -100,13 +101,13 @@ class CoffeeControl extends React.Component {
 
   handleEditingCoffeeInList = (coffeeToEdit) => {
     const editedMainCoffeeList = this.state.mainCoffeeList
-      .filter(coffee => coffee.id !== this.state.selectedCoffee.id)
+      .filter((coffee) => coffee.id !== this.state.selectedCoffee.id)
       .concat(coffeeToEdit);
     this.setState({
         mainCoffeeList: editedMainCoffeeList,
         editing: false,
-        selectedTicket: null
-      });
+        selectedCoffee: null
+    });
   }
 
   render(){
