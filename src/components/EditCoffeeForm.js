@@ -21,7 +21,8 @@ function EditCoffeeForm (props) {
     <React.Fragment>
       <ReusableForm 
         formSubmissionHandler={handleEditCoffeeFormSubmission}
-        buttonText="Update Coffee" />
+        buttonText="Update Coffee" 
+        defaultValues={coffee}/>
     </React.Fragment>
   );
 }

@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 function CoffeeDetail(props){
-  const { coffee } = props;
+  const { coffee, onClickingDelete, } = props;
 
   return (
     <React.Fragment>
@@ -14,6 +14,7 @@ function CoffeeDetail(props){
       <p>Available lbs: {coffee.avialable}</p>
       <button onClick={ props.onClickingEdit }>Edit Coffee</button> 
       <button onClick={ props.onCoffeeSale }>Sell a lb of Coffee</button> 
+      <button onClick={()=> onClickingDelete(coffee.id) }>Delete Coffee</button>
     </React.Fragment>
   );
 }
@@ -21,6 +22,7 @@ function CoffeeDetail(props){
 CoffeeDetail.propTypes = {
   coffee: PropTypes.object,
   onClickingEdit: PropTypes.func,
+  onClickingDelete: PropTypes.func,
   onCoffeeSale: PropTypes.func
 };
 
