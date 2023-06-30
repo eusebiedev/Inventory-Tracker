@@ -12,17 +12,17 @@ function EditCoffeeForm (props) {
       name: event.target.name.value, 
       origin: event.target.origin.value,
       roast: event.target.roast.value, 
-      price: parseFloat(event.target.price.value), 
-      available: parseInt(event.target.available.value),
-      id: coffee.id});
+      price: event.target.price.value, 
+      available: event.target.available.value,
+      id: coffee.id
+    });
   }
   
   return (
     <React.Fragment>
       <ReusableForm 
         formSubmissionHandler={handleEditCoffeeFormSubmission}
-        buttonText="Update Coffee" 
-        defaultValues={coffee}/>
+        buttonText="Update"/>
     </React.Fragment>
   );
 }

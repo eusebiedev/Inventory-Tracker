@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 function CoffeeDetail(props){
-  const { coffee, onClickingDelete, } = props;
+  const { coffee, onClickingDelete } = props;
 
   return (
     <React.Fragment>
