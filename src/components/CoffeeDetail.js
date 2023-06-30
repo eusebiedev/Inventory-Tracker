@@ -11,7 +11,7 @@ function CoffeeDetail(props){
       <p>Origin: {coffee.origin}</p>
       <p>Roast Style: {coffee.roast}</p>
       <p>Cost per lb: {coffee.price}</p>
-      <p>Available lbs: {coffee.avialable}</p>
+      <p>Available lbs: {coffee.available}</p>
       <button onClick={ props.onClickingEdit }>Edit Coffee</button> 
       <button onClick={ props.onCoffeeSale }>Sell a lb of Coffee</button> 
       <button onClick={()=> onClickingDelete(coffee.id) }>Delete Coffee</button>
