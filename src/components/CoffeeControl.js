@@ -87,14 +87,6 @@ class CoffeeControl extends React.Component {
     });
   }
 
-  handleDeletingCoffee = (id) => {
-    const newMainCoffeeList = this.state.mainCoffeeList.filter(coffee => coffee.id !== id);
-    this.setState({
-      mainCoffeeList: newMainCoffeeList,
-      selectedCoffee: null
-    });
-  }
-
   handleEditClick = () => {
     this.setState({editing: true});
   }
@@ -107,6 +99,28 @@ class CoffeeControl extends React.Component {
         mainCoffeeList: editedMainCoffeeList,
         editing: false,
         selectedCoffee: null
+    });
+  }
+
+  handleDeletingCoffee = (id) => {
+    const newMainCoffeeList = this.state.mainCoffeeList.filter(coffee => coffee.id !== id);
+    this.setState({
+      mainCoffeeList: newMainCoffeeList,
+      selectedCoffee: null
+    });
+  }
+
+  handleSellingCoffee = (_selectedCoffee) => {
+    let selectCoffee = this.state.selectedCoffee;
+    if (selectCoffee.available > 0){
+      selectCoffee.available -= 1;
+    } else {
+      selectCoffee.available = 0;
+    }
+    const newMainCoffeeList = this.state.mainCoffeeList;
+    newMainCoffeeList[this.state.mainCoffeeList.indexOf(selectCoffee)] = selectCoffee;
+    this.setState({
+    mainCoffeeList: newMainCoffeeList
     });
   }
 
@@ -123,7 +137,8 @@ class CoffeeControl extends React.Component {
       currentlyVisibleState = <CoffeeDetail 
       coffee = {this.state.selectedCoffee} 
       onClickingDelete = {this.handleDeletingCoffee}
-      onClickingEdit = {this.handleEditClick}/>
+      onClickingEdit = {this.handleEditClick}
+      onCoffeeSale = {this.handleSellingCoffee} />
       buttonText = "Return to Coffee List";
     } else if (this.state.formVisibleOnPage) {
       currentlyVisibleState = <NewCoffeeForm 
