@@ -5,7 +5,7 @@ function Coffee(props){
   return(
     <React.Fragment>
       <div onClick={() => props.whenCoffeeClicked(props.id)}>
-        <h3>{props.name}</h3><img src={props.image} alt="coffee" />
+        <h3>{props.name}</h3>
         <p><em>Coffee Origin: {props.origin}</em></p>
         <p>Roast Style: {props.roast}</p>
         <p>Cost per lb: ${props.price}</p>
@@ -22,10 +22,8 @@ Coffee.propTypes = {
   roast: PropTypes.string.isRequired,
   price: PropTypes.number.isRequired,
   available: PropTypes.number.isRequired,
-  image: PropTypes.string.isRequired,
   id: PropTypes.string,
   whenCoffeeClicked: PropTypes.func
-
 };
 
 export default Coffee;

@@ -6,7 +6,7 @@ function CoffeeDetail(props){
 
   return (
     <React.Fragment>
-      <h1>The Beans Details</h1><img src={coffee.image} alt="coffee" />
+      <h1>The Beans Details</h1>
       <h3>{coffee.name}</h3>
       <p>Origin: {coffee.origin}</p>
       <p>Roast Style: {coffee.roast}</p>
