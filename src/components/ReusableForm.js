@@ -26,6 +26,7 @@ function ReusableForm(props) {
           type='number'
           name='available'
           min='0'
+          max='130'
           placeholder='Available' required />
         <button type='submit'>{props.buttonText}</button>
       </form>

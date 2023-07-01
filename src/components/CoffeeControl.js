@@ -49,7 +49,7 @@ class CoffeeControl extends React.Component {
         {
           name: "Burlaps Midnight",
           origin: "Berlin",
-          roast: "Techno",
+          roast: "Dark",
           price: 25,
           available: 130,
           id: v4()
