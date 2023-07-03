@@ -16,7 +16,7 @@
 
 #### Initial Mockup designed in draw.io [drawio.com](https://www.drawio.com/)
 
-![InventoryTrackerMockup](src/img/inventorytracker.png)
+![InventoryTrackerMockup](src/img/inventorytracker.jpg)
 
 ## Description
 
