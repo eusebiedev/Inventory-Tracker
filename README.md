@@ -4,7 +4,6 @@
 
 #### Coffee Shop inventory tracker application built with React
 
-
 ## Technologies Used
 
 * React
@@ -32,7 +31,6 @@ As a user, I want to see a list/menu of all available types of coffee beans. For
 
 ## Setup/Installation Requirements
 
-## Setup Instructions 
 1. Open your terminal (e.g. Terminal of Gitbash) and run these commands:
 2. Clone this repo to your desktop using $ `git clone https://github.com/eusebiedev/Inventory-Tracker.git ` 
 3. Navigate to this project's root directory `inventory-tracker` with $ `cd inventory-tracker`
@@ -42,8 +40,6 @@ As a user, I want to see a list/menu of all available types of coffee beans. For
 ## Known Bugs as of 06/30/23
 
 * _No known bugs_
-
-## License
 
 ## [MIT](https://opensource.org/license/mit/) License 
 
